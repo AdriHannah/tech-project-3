@@ -1,0 +1,220 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: auto;
+}
+
+h1 {
+    color: #fff;
+    background: #2D3945;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 23px;
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #B7BCBF;
+    font-weight: 300;
+    font-size: 14px;
+    margin: auto;
+    text-align: center;
+    width: 85%;
+}
+
+hr {
+    width: 90%;
+}
+
+.first-line {
+    border-top: 4px solid;
+    margin-top: 35px;
+    margin-bottom: -5px;
+}
+
+.second-line {
+    border-top: 2px solid;
+    margin-bottom: 25px;
+}
+
+.third-line {
+    border-top: 2px solid;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border-style: hidden;
+}
+
+.custom-background {
+    background:#F2FAFA;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.first-set label {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #495D70;
+}
+
+.first-set input {
+    border-style: hidden;
+    background: #EFF0F1;
+    color: #495D70;
+    font-family: 'Merriweather', serif;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+input[type="email"]:invalid:focus:not(:placeholder-shown)~.requirements {
+    max-height: 200px;
+    padding: 0 30px 20px 50px;
+}
+
+.requirements {
+    padding: 0 30px 0 50px;
+    color: #999;
+    max-height: 0;
+    -webkit-transition: 0.28s;
+    transition: 0.28s;
+    overflow: hidden;
+    color: red;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    text-align: right;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 14px;
+
+}
+
+.zip-code input {
+    width: 50%;
+}
+
+
+select {
+    font-family: 'Merriweather', serif;
+    background: #EFF0F1;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: 20px;
+    margin: 15px 0;
+    font-size: 15px;
+    color: #495D70;
+    opacity: 0.3;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background: url("../images/sort.png") 95% / 14px no-repeat #eee;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.first-set input:focus,
+select:focus,
+textarea:focus {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.left {
+    color: #495D70;
+    text-align: left;
+    width: 100%;
+}
+
+.second-set p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-bottom: 20px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+textarea {
+    background: #EFF0F1;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+[type="submit"] {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: #fff;
+    background: #4EBBB5;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    width: 100%;
+}
+
+footer {
+    margin-top: 1em;
+    margin-bottom: 12em;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .wrapper .label-box {
+        width: 200px;
+    }
+
+    .wrapper .input-box {
+        width: 100%;
+    }
+
+    .zip-code input {
+        width: 50%;
+    }
+
+    hr,
+    .custom-background
+    {
+        width: 60%;
+        margin: 10px auto;
+    }  
+}

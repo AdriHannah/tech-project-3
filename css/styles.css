@@ -140,6 +140,8 @@ select::-ms-expand {
 select:focus,
 textarea:focus {
     opacity: 1;
+    color: black;
+    background: #F6E7E6;
     transition: 0.3s;
 }
 
